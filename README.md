@@ -14,10 +14,10 @@ The model will be a dashboard that individuals can interact with to increase int
 
 ## Resources
 - Data Source:
-  - `file.csv/json` retrieved from the [US [year/ACS] Census](https://www.census.gov/quickfacts/NV) using Pandas...
-  - `file.csv/json` retrieved from the [FCC](https://www.census.gov/quickfacts/NV) using Pandas...
+  - `file.csv/json` retrieved from the [U.S. Census Bureau's 2018 American Community Survey data](https://api.census.gov/data/2018/acs/acs5/profile/examples.html) using an API request.
+  - `file.csv/json` retrieved from the [Federal Communications Commission Broadband Database](https://broadbandmap.fcc.gov/#/) using Pandas...
 - Code: 
-  - The code for pulling the U.S. Census data with an API key for the state of California is in the `file_name.ipynb` file located within the `Notebook` folder.
+  - The ETL code for pulling the U.S. Census data with an API key for the state of California and placing it into a dataframe is in the `census_api.ipynb` file located within the `Notebook` folder.
 - Software:
   - JupyterNotebook, Python, Pandas, SciKit...
   - Database storage SQL: PgAdmin
@@ -42,7 +42,8 @@ The model will be a dashboard that individuals can interact with to increase int
 ## Output
 - Sample of what the dashboard will look like.
   Users will be shown a map of the state which they can then use to click into a specific county and view the internet coverage score of that particular county along with bars of factors that they can adjust to see if the coverage score will increase.
+
   The three bars above the "County Specific Details" are where we hope to add in scenarios that could simulate what might shift in a community if there is an economic depression, fire or anything else that could affect the factors we identified.
-  Users could then see what factors they could adjust to increase connectivity if one of the scenarios took place.
+    Users could then see what factors they could adjust to increase connectivity if one of the scenarios took place.
   
   ![Dashboard Sample](Static/Images/DashboardSample.PNG)
