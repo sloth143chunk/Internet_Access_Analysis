@@ -24,11 +24,11 @@ The model will be a dashboard that individuals can interact with to increase int
   - Dashboard: Flask, JavaScript, HTML, Tableau?
 ## Workflow
 
-### Machine Learning Model
-- Logistical regression, multicollinearity, decision tree, principal component analysis, reasonable score
+### Block Diagram
+- Process documentation plan for the project
 
 
-- Tara's flow chart goes here
+  ![process documentation plan](Static/Images/Final_Project_Process.png)
 ### Communication Protocols
 - Weekly large group and small group meetings; large group meets on zoom on Wednesdays and Sundays; small groups meet 1-2x at convenience of group members.
 - GitHub pushes go to repo owner (David); David along with other team members review and approve push requests. 
@@ -36,6 +36,13 @@ The model will be a dashboard that individuals can interact with to increase int
 - Communicate with whole group and small groups through Slack Channels and DMs
 - [Google Shared Folder](https://drive.google.com/drive/folders/1iTgYdopYC7-NkrwVKEIwUNZN5K2RShPh?usp=sharing) available to all members with notes from meetings and documentation of progress 
 
+### Machine Learning Model
+- Logistical regression, multicollinearity, decision tree, principal component analysis, reasonable score
 
 ## Output
-- Dashboard
+- Sample of what the dashboard will look like.
+  Users will be shown a map of the state which they can then use to click into a specific county and view the internet coverage score of that particular county along with bars of factors that they can adjust to see if the coverage score will increase.
+  The three bars above the "County Specific Details" are where we hope to add in scenarios that could simulate what might shift in a community if there is an economic depression, fire or anything else that could affect the factors we identified.
+  Users could then see what factors they could adjust to increase connectivity if one of the scenarios took place.
+  
+  ![Dashboard Sample](Static/Images/DashboardSample.PNG)
