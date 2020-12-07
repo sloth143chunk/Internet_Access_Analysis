@@ -1,0 +1,24 @@
+Git Hub Protocols
+
+git fetch
+	- updates backgoround local copy of repo
+
+git checkout -b newbranchname/whatyourworkingon origin/main
+
+	- lowercase
+	- create new branches to make logical changes
+	- publish your new branch
+	- merge when ready
+
+For merges(i?)
+	
+	- One/two team members review the files/code/write up
+	- Original member well confirm the merge request and pull it through
+
+After the merge
+	
+	- git fetch
+	- git rebase -i origin/main
+	- git push origin +david/ml
+
+	- git pull will create merge commits
