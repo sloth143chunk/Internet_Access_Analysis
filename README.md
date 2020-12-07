@@ -8,7 +8,7 @@ However, analyses from the Pew Research Center and other studies indicate that a
 ### Purpose
 
 This analysis determines the factors that play a role in internet connectivity within a community using machine learning.
-The project's goal is to use the analysis then to inform a model that can help communities determine the best approaches to bringing more people online.
+The project's goal is to use the analysis to inform a model that can help communities determine the best approaches to bringing more people online.
 The model will be a dashboard that individuals can interact with to increase internet coverage by targeting the factors identified with the analysis.
 
 
