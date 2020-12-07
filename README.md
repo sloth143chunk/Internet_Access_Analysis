@@ -37,7 +37,7 @@ The model will be a dashboard that individuals can interact with to increase int
 - [Google Shared Folder](https://drive.google.com/drive/folders/1iTgYdopYC7-NkrwVKEIwUNZN5K2RShPh?usp=sharing) available to all members with notes from meetings and documentation of progress 
 
 ### Machine Learning Model
-- Logistical regression, multicollinearity, decision tree, principal component analysis, reasonable score
+- Preprocess and encode data, train the model, classification/ensemble model
 
 ## Output
 - Sample of what the dashboard will look like.
