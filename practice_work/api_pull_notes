@@ -1,0 +1,174 @@
+# Pull census data from API
+census_api = f'https://api.census.gov/data/{user_input_year}/acs/acs5/profile?&get=
+
+GEO_ID,
+NAME, county name
+DP05_0001E, population
+
+(Internet)
+GEO_ID, 
+NAME, county name
+DP02_0150E, Computer and Interenet Total HH
+DP02_0151E, with a computer
+DP02_0152E, with bb interenet subscription
+
+(AGE)
+DP05_0005E, under 5
+DP05_0006E, 5-9
+DP05_0007E, 10-14
+DP05_0008E, 15-19
+DP05_0009E, 20-24
+DP05_0010E, 25-34
+DP05_0011E, 35-44
+DP05_0012E, 45-54
+DP05_0013E, 55-59
+DP05_0014E, 60-64
+DP05_0015E, 65-74
+DP05_0016E, 75-84
+DP05_0017E, 85 and over
+
+(Sex)
+DP05_0002E, Total Men
+DP05_0003E, Total Women
+
+(Income)
+DP03_0051E, HH w/income
+DP03_0052E, income <10,000
+DP03_0053E, income 10,000-14,999
+DP03_0054E, income 15,000-24,999
+DP03_0055E, income 25,000-34,999
+DP03_0056E, income 35,000-49,999
+DP03_0057E, income 50,000-74,999
+DP03_0058E, income 75,000-99,999
+DP03_0059E, income 100,000-149,999
+DP03_0060E, income 150,000-199,999
+DP03_0061E, income >= 200,000
+DP03_0062E, median income
+DP03_0063E, mean income
+
+(Education)
+DP02_0059PE	% EDUCATIONAL ATTAINMENT Population 25 years and over Less than 9th grade
+DP02_0060PE	% EDUCATIONAL ATTAINMENT Population 25 years and over 9th to 12th grade, no diploma
+DP02_0061PE	% EDUCATIONAL ATTAINMENT Population 25 years and over High school graduate
+DP02_0062PE	% EDUCATIONAL ATTAINMENT Population 25 years and over Some college, no degree
+DP02_0063PE	% EDUCATIONAL ATTAINMENT Population 25 years and over Associate's degree
+DP02_0064PE	% EDUCATIONAL ATTAINMENT Population 25 years and over Bachelor's degree
+DP02_0065PE	% EDUCATIONAL ATTAINMENT Population 25 years and over Graduate or professional degree
+
+(Race)
+DP05_0070E, RACE Total population
+DP05_0071E,	RACE Hispanic or Latino	
+DP05_0076E,	RACE Not Hispanic or Latino
+DP05_0079E,	RACE American Indian and Alaska Native
+DP05_0080E,	RACE Asian
+DP05_0078E,	RACE Black or African American
+DP05_0081E,	RACE Native Hawaiian and Other Pacific Islander
+DP05_0082E,	RACE Some other race
+DP05_0083E,	RACE Two or more races
+DP05_0085E,	RACE Two races excluding Some other race, and Three or more races
+DP05_0084E,	RACE Two or more races!!Two races including Some other race
+DP05_0077E,	RACE White alone
+
+(Citizenship)
+DP02_0086E,	Citizenship Total population
+DP02_0087E,	Citizenship Native
+DP02_0092E,	Citizenship Foreign born
+
+(Disability)
+DP02_0072E,	DISABILITY POPULATION Under 18 years
+DP02_0074E,	DISABILITY POPULATION 18 to 64 years
+DP02_0076E,	DISABILITY POPULATION 65 years and over
+DP02_0073E,	DISABILITY Under 18 years With a disability
+DP02_0075E,	DISABILITY 18 to 64 years With a disability
+DP02_0077E,	DISABILITY 65 years and over With a disability
+
+(Employment)
+DP03_0003E,	EMPLOYMENT STATUS 16 years and over In labor force - Civilian labor force
+DP03_0004E,	Employed
+DP03_0005E,	Unemployed
+DP03_0007E,	Not in labor force
+DP03_0009PE, % Unemployment Rate
+
+(OCCUPATION)
+DP03_0026E,	OCCUPATION Civilian employed population 16 years and over (total)
+DP03_0027E,	OCCUPATION Management, business, science, and arts occupations
+DP03_0028E,	OCCUPATION Service occupations
+DP03_0029E,	OCCUPATION Sales and office occupations
+DP03_0030E,	OCCUPATION Natural resources, construction, and maintenance occupations
+DP03_0031E,	OCCUPATION Production, transportation, and material moving occupations
+
+(INDUSTRY)
+DP03_0033E,	INDUSTRY Agriculture, forestry, fishing and hunting, and mining
+DP03_0034E,	INDUSTRY Construction
+DP03_0035E,	INDUSTRY Manufacturing
+DP03_0036E,	INDUSTRY Wholesale trade
+DP03_0037E,	INDUSTRY Retail trade
+DP03_0038E,	INDUSTRY Transportation and warehousing, and utilities
+DP03_0039E,	INDUSTRY Information
+DP03_0040E,	INDUSTRY Finance and insurance, and real estate and rental and leasing
+DP03_0041E,	INDUSTRY Professional, scientific, and management, and administrative and waste management services
+DP03_0042E,	INDUSTRY Educational services, and health care and social assistance
+DP03_0043E,	INDUSTRY Arts, entertainment, and recreation, and accommodation and food services
+DP03_0044E,	INDUSTRY Other services, except public administration
+DP03_0045E,	INDUSTRY Public administration
+
+(Family Structure)
+DP02_0001E	Estimate!!HOUSEHOLDS BY TYPE!!Total households (this minus DP02_0013E = HH with none under 18)
+DP02_0013E	Estimate!!HOUSEHOLDS BY TYPE!!Total households!!Households with one or more people under 18 years
+&
+
+
+for=county:*&in=state:{states_dict[user_input_state]}&
+key={census_api_key}'
+
+
+print(census_api)
+census_list = requests.get(census_api)
+census_list
+
+END!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Checking Age Demographics
+
+DP02_0072E,DP02_0074E,DP02_0076E,DP05_0005E,DP05_0006E,DP05_0007E,DP05_0008E,DP05_0009E,DP05_0010E,DP05_0011E,DP05_0012E,DP05_0013E,DP05_0014E,DP05_0015E,DP05_0016E,DP05_0017E
+
+END!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Creating API
+# Pull census demographic data from API
+census_api = f'https://api.census.gov/data/{user_input_year}/acs/acs5/profile?&get=GEO_ID,NAME,DP05_0001E,DP02_0150E,DP02_0151E,DP02_0152E,DP05_0005E,DP05_0006E,DP05_0007E,DP05_0008E,DP05_0009E,DP05_0010E,DP05_0011E,DP05_0012E,DP05_0013E,DP05_0014E,DP05_0015E,DP05_0016E,DP05_0017E,DP05_0002E,DP05_0003E,DP03_0051E,DP03_0052E,DP03_0053E,DP03_0054E,DP03_0055E,DP03_0056E,DP03_0057E,DP03_0058E,DP03_0059E,DP03_0060E,DP03_0061E,DP03_0062E,DP03_0063E,DP02_0059PE,DP02_0060PE,DP02_0061PE,DP02_0062PE,DP02_0063PE,DP02_0064PE,DP02_0065PE,DP05_0070E,DP05_0071E,DP05_0076E,DP05_0079E,DP05_0080E,DP05_0078E,DP05_0081E,DP05_0082E,DP05_0083E,DP05_0085E,DP05_0084E,DP05_0077E,DP02_0086E,DP02_0087E,DP02_0092E,DP02_0072E,DP02_0074E,DP02_0076E,DP02_0073E,DP02_0075E,DP02_0077E,DP03_0003E,DP03_0004E,DP03_0005E,DP03_0007E,DP03_0009PE,DP03_0026E,DP03_0027E,DP03_0028E,DP03_0029E,DP03_0030E,DP03_0031E,DP03_0033E,DP03_0034E,DP03_0035E,DP03_0036E,DP03_0037E,DP03_0038E,DP03_0039E,DP03_0040E,DP03_0041E,DP03_0042E,DP03_0043E,DP03_0044E,DP03_0045E,DP02_0001E,DP02_0013E&for=county:*&in=state:{states_dict[user_input_state]}&key={census_api_key}'
+
+print(census_api)
+census_list = requests.get(census_api)
+census_list
+
+END!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+(population) - done
+GEO_ID,NAME,DP05_0001E
+
+(Internet) - done
+GEO_ID,NAME,DP02_0150E,DP02_0151E,DP02_0152E
+
+(AGE) - done
+GEO_ID,NAME,DP05_0005E,DP05_0006E,DP05_0007E,DP05_0008E,DP05_0009E,DP05_0010E,DP05_0011E,DP05_0012E,DP05_0013E,DP05_0014E,DP05_0015E,DP05_0016E,DP05_0017E
+
+(Sex) - done
+GEO_ID,NAME,DP05_0002E,DP05_0003E
+
+(Income) - done
+GEO_ID,NAME,DP03_0051E,DP03_0052E,DP03_0053E,DP03_0054E,DP03_0055E,DP03_0056E,DP03_0057E,DP03_0058E,DP03_0059E,DP03_0060E,DP03_0061E,DP03_0062E,DP03_0063E
+
+(Education) - done
+GEO_ID,NAME,DP02_0059PE,DP02_0060PE,DP02_0061PE,DP02_0062PE,DP02_0063PE,DP02_0064PE,DP02_0065PE
+
+(Race) - done
+GEO_ID,NAME,DP05_0070E,DP05_0071E,DP05_0076E,DP05_0079E,DP05_0080E,DP05_0078E,DP05_0081E,DP05_0082E,DP05_0083E,DP05_0085E,DP05_0084E,DP05_0077E
+
+
+
+
+
+
+
+
