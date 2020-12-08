@@ -128,8 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-<<<<<<< HEAD
 .DS_Store
-=======
 config.py
->>>>>>> 0291eb3... added config.py to .gitignore file
