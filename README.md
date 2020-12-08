@@ -14,10 +14,14 @@ The model will be a dashboard that individuals can interact with to increase int
 
 ## Resources
 - Data Source:
-  - `file.csv/json` retrieved from the [U.S. Census Bureau's 2018 American Community Survey data](https://api.census.gov/data/2018/acs/acs5/profile/examples.html) using an API request.
-  - `file.csv/json` retrieved from the [Federal Communications Commission Broadband Database](https://broadbandmap.fcc.gov/#/) using Pandas...
+  - `filetobeloaded.csv` retrieved from the [U.S. Census Bureau's 2018 American Community Survey data](https://api.census.gov/data/2018/acs/acs5/profile/examples.html) using an API request.
+  - The folders `definitions`, `fcc` and `mappings` within the `resources` folder, contain data retrieved from the [Federal Communications Commission Broadband Database](https://broadbandmap.fcc.gov/#/).
+    - The `definitions` folder includes urban vs. rural designations for areas from the 2010 U.S. Census.
+    - The `fcc` folder contains area mappings by county, technology type, internet speed and number of internet providers from the FCC.
+    - The `mappings` folder includes GEOID mapping tables and relevant geography codes used by the FCC.
 - Code: 
-  - The ETL code for pulling the U.S. Census data with an API key for the state of California and placing it into a dataframe is in the `census_api.ipynb` file located within the `Notebook` folder.
+  - The ETL code for pulling the U.S. Census data with an API key for the state of California and placing it into a dataframe is in the `census_api.ipynb` file located within the `notebook` folder.
+  - The Machine Learning code to [specific description here] is in the `internet_access_ensemble.ipynb` file within the `notebook` folder.
   
 - Software:
   - JupyterNotebook, Python, Pandas, SciKit...
@@ -25,24 +29,33 @@ The model will be a dashboard that individuals can interact with to increase int
   - Dashboard: Flask, JavaScript, HTML, Tableau?
 ## Workflow
 
+### Communication Protocols
+- Meetings
+  - Weekly large group and small group meetings; large group meets on zoom on Wednesdays and Sundays; small groups meet 1-2 times a week at the convenience of group members.
+  -  Group breakdown:
+     -  Machine Learning Team = Tabitha, David, Tara
+     -  Database Team = TC, Andrew
+  - Communicate with whole group and small groups through Slack Channels and DMs
+  - [Google Shared Folder](https://drive.google.com/drive/folders/1iTgYdopYC7-NkrwVKEIwUNZN5K2RShPh?usp=sharing) available to all members with notes from meetings and documentation of process
+- GitHub Protocols
+  - Members working on the same files need to communicate any commits with the other parties.
+  - Team members within the Machine Learning Team and the Database team communicate when they are pulling to main.
+  - A pull request must be approved by at least one member of the overall team.
+  - After a pull request is approved, the person who made the request can merge it with the main branch.
+  - Group members will create new branches in the format name/new_project_piece_name every time he or she is beginning a new/unique part of project.
+  - Group members must ensure that they are working from the latest update to the main branch with protocols outlined in the `github_protocols.txt` file within the `GitHub` folder.
+
 ### Block Diagram
 - Process documentation plan for the project
 
 
   ![process documentation plan](Static/Images/Final_Project_Process.png)
-### Communication Protocols
-- Weekly large group and small group meetings; large group meets on zoom on Wednesdays and Sundays; small groups meet 1-2x at convenience of group members.
-- GitHub pushes go to repo owner (David); David along with other team members review and approve push requests. 
-  Machine Learning Team = Tabitha, David, Tara; Database Team = TC, Andrew
-- Communicate with whole group and small groups through Slack Channels and DMs
-- [Google Shared Folder](https://drive.google.com/drive/folders/1iTgYdopYC7-NkrwVKEIwUNZN5K2RShPh?usp=sharing) available to all members with notes from meetings and documentation of progress
-- Best practice for people working on the same files is to communicate any commits with the other party
-- A pull request must be approved by at least one member of the team, before the requester completes it.
-- Need to add communication protocols for team members to let their small group (DB or ML) folks know when they are pulling to main.
 
 ### Machine Learning Model
 - Preprocess and encode data, train the model, classification/ensemble model
 
+### Database Creation
+- Will describe the database creation and data storage plan here (once it is more finalized).
 ## Output
 - Sample of what the dashboard will look like.
   Users will be shown a map of the state which they can then use to click into a specific county and view the internet coverage score of that particular county along with bars of factors that they can adjust to see if the coverage score will increase.
