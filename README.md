@@ -28,7 +28,6 @@ The model will be a dashboard that individuals can interact with to increase int
   - Database storage SQL: PgAdmin
   - Dashboard: Flask, JavaScript, HTML, Tableau?
 ## Workflow
-
 ### Communication Protocols
 - Meetings
   - Weekly large group and small group meetings; large group meets on zoom on Wednesdays and Sundays; small groups meet 1-2 times a week at the convenience of group members.
@@ -50,11 +49,11 @@ The model will be a dashboard that individuals can interact with to increase int
 
   ![process documentation plan](Static/Images/Final_Project_Process.png)
 
-### Machine Learning Model
-- Preprocess and encode data, train the model, classification/ensemble model
-
 ### Database Creation
 - Will describe the database creation and data storage plan here (once it is more finalized).
+
+### Machine Learning Model
+- Preprocess and encode data, train the model, classification/ensemble model
 ## Output
 - Sample of what the dashboard will look like.
   Users will be shown a map of the state which they can then use to click into a specific county and view the internet coverage score of that particular county along with bars of factors that they can adjust to see if the coverage score will increase.
