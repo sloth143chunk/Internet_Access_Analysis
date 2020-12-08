@@ -42,12 +42,12 @@ The model will be a dashboard that individuals can interact with to increase int
   - A pull request must be approved by at least one member of the overall team.
   - After a pull request is approved, the person who made the request can merge it with the main branch.
   - Group members will create new branches in the format name/new_project_piece_name every time he or she is beginning a new/unique part of project.
-  - Group members must ensure that they are working from the latest update to the main branch with protocols outlined in the `github_protocols.txt` file within the `github` folder.
+  - Group members must ensure that they are working from the latest update to the main branch with protocols outlined in the `github_protocols.txt` file within the `GitHub` folder.
 
 - Process documentation
 
 
-  ![process documentation plan](static/images/Final_Project_Process.png)
+  ![process documentation plan](Static/Images/Final_Project_Process.png)
 
 ### Database Creation
 - Will describe the database creation and data storage plan here (once it is more finalized).
@@ -61,4 +61,4 @@ The model will be a dashboard that individuals can interact with to increase int
   The three bars above the "County Specific Details" are where we hope to add in scenarios that could simulate what might shift in a community if there is an economic depression, fire or anything else that could affect the factors we identified.
     Users could then see what factors they could adjust to increase connectivity if one of the scenarios took place.
   
-  ![Dashboard Sample](static/images/dashboard_sample.PNG)
+  ![Dashboard Sample](Static/Images/dashboard_sample.PNG)
