@@ -18,6 +18,7 @@ The model will be a dashboard that individuals can interact with to increase int
   - `file.csv/json` retrieved from the [Federal Communications Commission Broadband Database](https://broadbandmap.fcc.gov/#/) using Pandas...
 - Code: 
   - The ETL code for pulling the U.S. Census data with an API key for the state of California and placing it into a dataframe is in the `census_api.ipynb` file located within the `Notebook` folder.
+  
 - Software:
   - JupyterNotebook, Python, Pandas, SciKit...
   - Database storage SQL: PgAdmin
@@ -34,7 +35,10 @@ The model will be a dashboard that individuals can interact with to increase int
 - GitHub pushes go to repo owner (David); David along with other team members review and approve push requests. 
   Machine Learning Team = Tabitha, David, Tara; Database Team = TC, Andrew
 - Communicate with whole group and small groups through Slack Channels and DMs
-- [Google Shared Folder](https://drive.google.com/drive/folders/1iTgYdopYC7-NkrwVKEIwUNZN5K2RShPh?usp=sharing) available to all members with notes from meetings and documentation of progress 
+- [Google Shared Folder](https://drive.google.com/drive/folders/1iTgYdopYC7-NkrwVKEIwUNZN5K2RShPh?usp=sharing) available to all members with notes from meetings and documentation of progress
+- Best practice for people working on the same files is to communicate any commits with the other party
+- A pull request must be approved by at least one member of the team, before the requester completes it.
+- Need to add communication protocols for team members to let their small group (DB or ML) folks know when they are pulling to main.
 
 ### Machine Learning Model
 - Preprocess and encode data, train the model, classification/ensemble model
@@ -46,4 +50,4 @@ The model will be a dashboard that individuals can interact with to increase int
   The three bars above the "County Specific Details" are where we hope to add in scenarios that could simulate what might shift in a community if there is an economic depression, fire or anything else that could affect the factors we identified.
     Users could then see what factors they could adjust to increase connectivity if one of the scenarios took place.
   
-  ![Dashboard Sample](Static/Images/DashboardSample.PNG)
+  ![Dashboard Sample](Static/Images/Dashboard_Sample.PNG)
