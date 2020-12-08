@@ -23,5 +23,4 @@ After the merge
 	- Esc -> :wq
 	- git push origin +your/branch
 	
-
 	- git pull will create merge commits
