@@ -1,0 +1,27 @@
+census_api.ipynb:
+requests==
+pandas==
+census_api_key
+
+iaa_oversampling.ipynb:
+matplotlob.pyplot==
+from sklearn.datasets import make_blobs
+from collections import Counter
+from sklearn.model_selection import train_test_split
+from imblearn.over_sampling import RandomOverSampler
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import balanced_accuracy_score
+from imblearn.metrics import classification_report_imbalanced
+from imblearn.over_sampling import SMOTE
+
+iaa_combination_sampling.ipynb:
+pandas
+from path import Path
+from collections import Counter
+from sklearn.model_selection import train_test_split
+from imblearn.combine import SMOTEENN
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import balanced_accuracy_score
+from imblearn.metrics import classification_report_imbalanced
