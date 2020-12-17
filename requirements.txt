@@ -1,27 +1,28 @@
+py==3.6.9
+
 census_api.ipynb:
 requests==
 pandas==
-census_api_key
+census_api_key==
 
 iaa_oversampling.ipynb:
 matplotlob.pyplot==
-from sklearn.datasets import make_blobs
-from collections import Counter
-from sklearn.model_selection import train_test_split
-from imblearn.over_sampling import RandomOverSampler
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import balanced_accuracy_score
-from imblearn.metrics import classification_report_imbalanced
-from imblearn.over_sampling import SMOTE
+sklearn.datasets
+collections
+sklearn.model_selection
+imblearn.over_sampling
+sklearn.linear_model
+sklearn.metrics
+sklearn.metrics
+imblearn.metrics
+imblearn.over_sampling
 
 iaa_combination_sampling.ipynb:
 pandas
-from path import Path
-from collections import Counter
-from sklearn.model_selection import train_test_split
-from imblearn.combine import SMOTEENN
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import balanced_accuracy_score
-from imblearn.metrics import classification_report_imbalanced
+path
+collections
+sklearn.model_selection
+imblearn.combine
+sklearn.linear_model
+sklearn.metrics
+imblearn.metrics
