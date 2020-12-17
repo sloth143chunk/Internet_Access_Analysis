@@ -1,4 +1,4 @@
-geo_id,county_name,family_structure_hh_total,family_structure_hh_with_one_or_more_under_18,state_id,county_id
+GEO_ID,NAME,DP02_0001E,DP02_0013E,state,county
 0500000US06033,"Lake County, California",25966,6757,06,033
 0500000US06043,"Mariposa County, California",7700,1922,06,043
 0500000US06115,"Yuba County, California",26179,10190,06,115
