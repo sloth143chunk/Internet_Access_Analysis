@@ -1,4 +1,4 @@
-geo_id,county_name,avg_household_size,state_id,county_id,county
+geo_id,county_name,population,avg_household_size,state_id,county_id
 0500000US06033,"Lake County, California",64148,2.43,06,033
 0500000US06043,"Mariposa County, California",17540,2.13,06,043
 0500000US06115,"Yuba County, California",75493,2.83,06,115
