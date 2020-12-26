@@ -1,0 +1,79 @@
+/* Background Color */
+body {
+  background-color: #003366;
+}
+
+/* Jumbotron Background Image */
+.jumbotron{
+  background: url("../Images/internet_jumbotron.jpg") no-repeat center center; 
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 50% 100%;
+  background-size: 75% 100%;
+  min-height: 300px;
+}
+
+/* h1 Styling */
+h1 {
+  text-align:center;
+  color: #FFFFFF;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 25%;
+}
+
+/* Map Styling */
+html, body
+{
+  height: 75%;
+  /*width: 0%;*/
+  /*padding-top: ;*/
+  /*padding-bottom: ;*/
+}
+#mapid {
+  width: 50%;
+  height: 75%;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  background-color: #003366;
+  color: #FFFFFF;
+}
+
+/* CSS Sample*/
+/*
+html,
+body,
+#mapid {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.legend {
+  padding: 10px;
+  line-height: 18px;
+  color: #555;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+

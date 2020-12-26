@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US County Map For Internet</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!-- d3 JavaScript -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>  
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="Static/css/style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- Jumbotron (headder)-->
+    <div class="jumbotron text-center">
+    <h1>Internet<br>How Does It Compare</h1>
+    </div><br>
+
+    <div class="row" id="identifer">
+    </div><br>
+
+  </div>
+
+  <!-- Map -->
+  <div id="mapid"></div>
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <!-- API key -->
+  <script type="text/javascript" src="Static/js/config.js"></script>
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="Static/js/map.js"></script>
+
+  <footer>
+    <p>Author: TC Rotunda<br>
+    <script language="Javascript">
+    document.write("This page was last modified on: " + document.lastModified +"");
+    </SCRIPT></p>
+  </footer>
+
+</body>
+</html>

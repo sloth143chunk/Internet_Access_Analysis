@@ -128,5 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-.DS_Store
+*.DS_Store
 config.py
+config.js
+
+# Ignoring .json file because it is too large
+*ca-county-boundaries.json
