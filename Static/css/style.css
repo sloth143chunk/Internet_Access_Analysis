@@ -3,6 +3,42 @@ body {
   background-color: #003366;
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #C0C0C0;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #003366;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #FFFFFF;
+  color: #003366;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #808080;
+  color: #003366;
+}
+
+.container-fluid {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
 /* Jumbotron Background Image */
 .jumbotron{
   background: url("../Images/internet_jumbotron.jpg") no-repeat center center; 
@@ -29,10 +65,11 @@ h1 {
 /* Map Styling */
 html, body
 {
-  height: 75%;
+  height: 80%;
   /*width: 0%;*/
-  /*padding-top: ;*/
-  /*padding-bottom: ;*/
+  padding-top: 1%;
+  /*padding-bottom: 50px;*/
+  margin: 0;
 }
 #mapid {
   width: 50%;
@@ -50,17 +87,50 @@ html, body
   opacity: 0.7;
 }
 /* h4 Styling Map Popups */
-h4 {
+.map-popup-header {
   text-align:center;
-  color: #000000;
+  color: #003366;
+}
+.map-popup-contents{
+  text-align:left;
+  color: #003366;
+}
+
+/* About Page Body Styling  */
+.about {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Contact Page Body Styling  */
+.contact {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.push {
+  height: 45%;
 }
 
 /* Footer Styling */
-footer {
+.footer{
+  /* height: 50px;
+  line-height: 50px; */
   text-align: center;
-  background-color: #003366;
-  color: #FFFFFF;
+  vertical-align: middle;
+  background-color: #C0C0C0;
+  color: #003366;
+  position: relative;
 }
+p {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+
+
+
 
 /* CSS Sample*/
 /*

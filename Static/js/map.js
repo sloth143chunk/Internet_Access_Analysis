@@ -68,9 +68,9 @@ d3.json(usCounties).then(function(data) {
     L.geoJson(data,{
         style:countyStyle,
         onEachFeature: function onEachFeature(feature, layer) {
-            layer.bindPopup("<h4>"+feature.properties.NAMELSAD10+", "+feature.properties.STUSPS10+"</h4>"+
-            "<p>"+"GEO ID: "+feature.properties.GEOID10+"</p>"+
-            "<p>"+"Internet Score: "+"</p>")
+            layer.bindPopup("<div class='map-popup-header'><h4>"+feature.properties.NAMELSAD10+", "+feature.properties.STUSPS10+"</h4></div>"+
+            "<div class='map-popup-contents'><p>"+"GEO ID: "+feature.properties.GEOID10+"<br>"+
+            "Internet Score: "+"</p></div>")
     }})
     .addTo(map);
 });
