@@ -1,59 +1,59 @@
-geo_id,county_name,%_eduction_population_25_and_over_less_than_9th_grade,%_eduction_population_25_and_over_9th-12th_no_diploma,%_eduction_population_25_and_over_high_school_graduate,%_eduction_population_25_and_over_some_college_no_degree,%_eduction_population_25_and_over_associates_degree,%_eduction_population_25_and_over_bachelors_degree,%_eduction_population_25_and_over_graduate_or_professional_degree,state_id,county_id
-0500000US06033,"Lake County, California",5.6,9.2,30.1,27.8,11.5,10.3,5.5,06,033
-0500000US06043,"Mariposa County, California",3.2,6.4,26.5,30.6,9.8,14.6,8.8,06,043
-0500000US06115,"Yuba County, California",7.6,10.3,23.1,31.2,11.0,11.7,4.9,06,115
-0500000US06013,"Contra Costa County, California",5.8,4.9,17.6,21.8,8.3,26.1,15.6,06,013
-0500000US06035,"Lassen County, California",3.8,13.4,33.2,27.8,9.7,8.0,4.1,06,035
-0500000US06083,"Santa Barbara County, California",12.2,6.8,17.9,21.5,7.7,20.0,13.8,06,083
-0500000US06097,"Sonoma County, California",6.2,5.8,18.8,24.8,9.5,22.0,12.9,06,097
-0500000US06025,"Imperial County, California",16.9,14.2,24.5,23.8,6.3,9.9,4.6,06,025
-0500000US06051,"Mono County, California",6.5,4.8,22.8,28.1,7.2,23.3,7.4,06,051
-0500000US06001,"Alameda County, California",6.2,5.8,17.6,17.9,6.5,26.4,19.5,06,001
-0500000US06067,"Sacramento County, California",6.5,6.1,22.3,24.9,9.7,20.1,10.4,06,067
-0500000US06055,"Napa County, California",9.7,5.2,18.0,23.0,9.2,23.0,11.9,06,055
-0500000US06053,"Monterey County, California",19.5,9.2,20.4,18.2,8.1,14.7,9.7,06,053
-0500000US06091,"Sierra County, California",0.4,6.3,26.6,34.6,13.4,8.9,9.8,06,091
-0500000US06073,"San Diego County, California",6.7,6.1,18.4,22.4,8.2,23.5,14.7,06,073
-0500000US06113,"Yolo County, California",7.2,6.5,18.5,19.5,6.8,21.1,20.4,06,113
-0500000US06023,"Humboldt County, California",2.8,6.8,23.5,27.5,9.5,19.6,10.2,06,023
-0500000US06003,"Alpine County, California",3.2,7.9,28.7,26.1,4.1,19.0,11.0,06,003
-0500000US06045,"Mendocino County, California",6.0,7.1,25.8,28.5,7.9,16.3,8.3,06,045
-0500000US06087,"Santa Cruz County, California",9.1,4.5,15.8,21.7,8.9,23.7,16.4,06,087
-0500000US06037,"Los Angeles County, California",12.6,8.7,20.7,19.2,7.0,20.7,11.1,06,037
-0500000US06065,"Riverside County, California",9.1,9.2,26.9,24.9,8.0,13.9,7.9,06,065
-0500000US06085,"Santa Clara County, California",6.7,5.2,14.5,15.4,6.9,27.3,24.0,06,085
-0500000US06041,"Marin County, California",3.9,2.9,10.9,17.0,6.5,33.2,25.6,06,041
-0500000US06093,"Siskiyou County, California",3.2,6.8,25.5,30.5,11.4,14.9,7.7,06,093
-0500000US06089,"Shasta County, California",2.4,6.8,24.8,32.2,11.6,14.6,7.6,06,089
-0500000US06015,"Del Norte County, California",4.5,14.5,31.5,26.9,8.3,8.3,6.0,06,015
-0500000US06021,"Glenn County, California",13.8,10.9,28.2,24.6,8.6,10.9,3.0,06,021
-0500000US06007,"Butte County, California",3.9,6.8,22.7,29.8,10.3,17.5,9.0,06,007
-0500000US06063,"Plumas County, California",1.5,4.6,25.2,32.7,12.6,13.3,10.2,06,063
-0500000US06079,"San Luis Obispo County, California",4.1,5.0,19.8,25.9,10.5,21.4,13.2,06,079
-0500000US06029,"Kern County, California",13.6,12.6,27.7,22.8,7.2,10.7,5.4,06,029
-0500000US06059,"Orange County, California",8.2,6.7,17.1,20.3,7.8,25.7,14.1,06,059
-0500000US06009,"Calaveras County, California",3.3,6.3,27.6,31.8,12.3,12.7,6.0,06,009
-0500000US06101,"Sutter County, California",12.7,9.3,23.9,25.4,10.9,11.8,5.9,06,101
-0500000US06081,"San Mateo County, California",6.4,4.5,15.0,17.2,7.0,28.8,21.2,06,081
-0500000US06109,"Tuolumne County, California",1.9,7.7,28.4,31.2,10.8,12.9,7.2,06,109
-0500000US06077,"San Joaquin County, California",11.2,9.9,28.2,22.9,9.3,12.6,5.9,06,077
-0500000US06005,"Amador County, California",2.5,7.2,28.7,29.6,11.7,13.2,7.1,06,005
-0500000US06047,"Merced County, California",18.5,12.1,25.8,22.4,7.1,9.1,4.8,06,047
-0500000US06049,"Modoc County, California",7.0,7.4,32.3,26.1,11.4,10.4,5.5,06,049
-0500000US06027,"Inyo County, California",4.2,6.9,29.3,25.6,7.9,16.1,10.0,06,027
-0500000US06099,"Stanislaus County, California",11.6,10.1,28.6,25.1,7.7,11.5,5.4,06,099
-0500000US06103,"Tehama County, California",7.1,8.5,30.7,30.5,7.7,11.1,4.4,06,103
-0500000US06069,"San Benito County, California",13.9,6.2,24.8,25.7,9.7,13.6,6.1,06,069
-0500000US06017,"El Dorado County, California",2.3,4.6,21.2,27.1,11.0,21.7,12.0,06,017
-0500000US06075,"San Francisco County, California",7.1,4.5,12.3,13.8,5.3,34.3,22.8,06,075
-0500000US06107,"Tulare County, California",18.9,11.3,26.0,21.9,7.6,9.6,4.8,06,107
-0500000US06057,"Nevada County, California",2.0,3.8,18.4,28.7,10.5,23.6,13.0,06,057
-0500000US06039,"Madera County, California",16.9,11.2,25.0,24.5,7.9,10.0,4.5,06,039
-0500000US06105,"Trinity County, California",1.5,7.9,33.4,29.8,7.8,14.9,4.8,06,105
-0500000US06071,"San Bernardino County, California",9.1,11.4,26.5,24.5,8.3,13.2,7.1,06,071
-0500000US06061,"Placer County, California",2.1,3.3,18.2,26.6,11.3,25.9,12.7,06,061
-0500000US06095,"Solano County, California",5.7,6.3,23.3,28.3,10.1,18.3,7.9,06,095
-0500000US06011,"Colusa County, California",19.7,11.0,23.7,20.6,9.7,11.5,3.9,06,011
-0500000US06031,"Kings County, California",12.8,13.5,25.5,26.0,8.7,9.5,4.0,06,031
-0500000US06019,"Fresno County, California",14.2,10.5,22.9,23.2,8.5,13.8,6.9,06,019
-0500000US06111,"Ventura County, California",9.6,6.0,18.9,23.1,9.3,20.8,12.3,06,111
+geo_id,state_id,county_id,county_name,%_eduction_population_25_and_over_less_than_9th_grade,%_eduction_population_25_and_over_9th-12th_no_diploma,%_eduction_population_25_and_over_high_school_graduate,%_eduction_population_25_and_over_some_college_no_degree,%_eduction_population_25_and_over_associates_degree,%_eduction_population_25_and_over_bachelors_degree,%_eduction_population_25_and_over_graduate_or_professional_degree
+0500000US06033,06,033,Lake County,5.6,9.2,30.1,27.8,11.5,10.3,5.5
+0500000US06043,06,043,Mariposa County,3.2,6.4,26.5,30.6,9.8,14.6,8.8
+0500000US06115,06,115,Yuba County,7.6,10.3,23.1,31.2,11.0,11.7,4.9
+0500000US06013,06,013,Contra Costa County,5.8,4.9,17.6,21.8,8.3,26.1,15.6
+0500000US06035,06,035,Lassen County,3.8,13.4,33.2,27.8,9.7,8.0,4.1
+0500000US06083,06,083,Santa Barbara County,12.2,6.8,17.9,21.5,7.7,20.0,13.8
+0500000US06097,06,097,Sonoma County,6.2,5.8,18.8,24.8,9.5,22.0,12.9
+0500000US06025,06,025,Imperial County,16.9,14.2,24.5,23.8,6.3,9.9,4.6
+0500000US06051,06,051,Mono County,6.5,4.8,22.8,28.1,7.2,23.3,7.4
+0500000US06001,06,001,Alameda County,6.2,5.8,17.6,17.9,6.5,26.4,19.5
+0500000US06067,06,067,Sacramento County,6.5,6.1,22.3,24.9,9.7,20.1,10.4
+0500000US06055,06,055,Napa County,9.7,5.2,18.0,23.0,9.2,23.0,11.9
+0500000US06053,06,053,Monterey County,19.5,9.2,20.4,18.2,8.1,14.7,9.7
+0500000US06091,06,091,Sierra County,0.4,6.3,26.6,34.6,13.4,8.9,9.8
+0500000US06073,06,073,San Diego County,6.7,6.1,18.4,22.4,8.2,23.5,14.7
+0500000US06113,06,113,Yolo County,7.2,6.5,18.5,19.5,6.8,21.1,20.4
+0500000US06023,06,023,Humboldt County,2.8,6.8,23.5,27.5,9.5,19.6,10.2
+0500000US06003,06,003,Alpine County,3.2,7.9,28.7,26.1,4.1,19.0,11.0
+0500000US06045,06,045,Mendocino County,6.0,7.1,25.8,28.5,7.9,16.3,8.3
+0500000US06087,06,087,Santa Cruz County,9.1,4.5,15.8,21.7,8.9,23.7,16.4
+0500000US06037,06,037,Los Angeles County,12.6,8.7,20.7,19.2,7.0,20.7,11.1
+0500000US06065,06,065,Riverside County,9.1,9.2,26.9,24.9,8.0,13.9,7.9
+0500000US06085,06,085,Santa Clara County,6.7,5.2,14.5,15.4,6.9,27.3,24.0
+0500000US06041,06,041,Marin County,3.9,2.9,10.9,17.0,6.5,33.2,25.6
+0500000US06093,06,093,Siskiyou County,3.2,6.8,25.5,30.5,11.4,14.9,7.7
+0500000US06089,06,089,Shasta County,2.4,6.8,24.8,32.2,11.6,14.6,7.6
+0500000US06015,06,015,Del Norte County,4.5,14.5,31.5,26.9,8.3,8.3,6.0
+0500000US06021,06,021,Glenn County,13.8,10.9,28.2,24.6,8.6,10.9,3.0
+0500000US06007,06,007,Butte County,3.9,6.8,22.7,29.8,10.3,17.5,9.0
+0500000US06063,06,063,Plumas County,1.5,4.6,25.2,32.7,12.6,13.3,10.2
+0500000US06079,06,079,San Luis Obispo County,4.1,5.0,19.8,25.9,10.5,21.4,13.2
+0500000US06029,06,029,Kern County,13.6,12.6,27.7,22.8,7.2,10.7,5.4
+0500000US06059,06,059,Orange County,8.2,6.7,17.1,20.3,7.8,25.7,14.1
+0500000US06009,06,009,Calaveras County,3.3,6.3,27.6,31.8,12.3,12.7,6.0
+0500000US06101,06,101,Sutter County,12.7,9.3,23.9,25.4,10.9,11.8,5.9
+0500000US06081,06,081,San Mateo County,6.4,4.5,15.0,17.2,7.0,28.8,21.2
+0500000US06109,06,109,Tuolumne County,1.9,7.7,28.4,31.2,10.8,12.9,7.2
+0500000US06077,06,077,San Joaquin County,11.2,9.9,28.2,22.9,9.3,12.6,5.9
+0500000US06005,06,005,Amador County,2.5,7.2,28.7,29.6,11.7,13.2,7.1
+0500000US06047,06,047,Merced County,18.5,12.1,25.8,22.4,7.1,9.1,4.8
+0500000US06049,06,049,Modoc County,7.0,7.4,32.3,26.1,11.4,10.4,5.5
+0500000US06027,06,027,Inyo County,4.2,6.9,29.3,25.6,7.9,16.1,10.0
+0500000US06099,06,099,Stanislaus County,11.6,10.1,28.6,25.1,7.7,11.5,5.4
+0500000US06103,06,103,Tehama County,7.1,8.5,30.7,30.5,7.7,11.1,4.4
+0500000US06069,06,069,San Benito County,13.9,6.2,24.8,25.7,9.7,13.6,6.1
+0500000US06017,06,017,El Dorado County,2.3,4.6,21.2,27.1,11.0,21.7,12.0
+0500000US06075,06,075,San Francisco County,7.1,4.5,12.3,13.8,5.3,34.3,22.8
+0500000US06107,06,107,Tulare County,18.9,11.3,26.0,21.9,7.6,9.6,4.8
+0500000US06057,06,057,Nevada County,2.0,3.8,18.4,28.7,10.5,23.6,13.0
+0500000US06039,06,039,Madera County,16.9,11.2,25.0,24.5,7.9,10.0,4.5
+0500000US06105,06,105,Trinity County,1.5,7.9,33.4,29.8,7.8,14.9,4.8
+0500000US06071,06,071,San Bernardino County,9.1,11.4,26.5,24.5,8.3,13.2,7.1
+0500000US06061,06,061,Placer County,2.1,3.3,18.2,26.6,11.3,25.9,12.7
+0500000US06095,06,095,Solano County,5.7,6.3,23.3,28.3,10.1,18.3,7.9
+0500000US06011,06,011,Colusa County,19.7,11.0,23.7,20.6,9.7,11.5,3.9
+0500000US06031,06,031,Kings County,12.8,13.5,25.5,26.0,8.7,9.5,4.0
+0500000US06019,06,019,Fresno County,14.2,10.5,22.9,23.2,8.5,13.8,6.9
+0500000US06111,06,111,Ventura County,9.6,6.0,18.9,23.1,9.3,20.8,12.3
