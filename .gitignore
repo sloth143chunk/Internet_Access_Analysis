@@ -129,8 +129,6 @@ dmypy.json
 .pyre/
 
 *.DS_Store
-config.py
-config.js
+.DS_Store
 
-# Ignoring .json file because it is too large
-*ca-county-boundaries.json
+config.py
