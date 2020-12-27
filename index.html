@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>US County Map For Internet</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -19,21 +23,27 @@
     <div class="topnav">
       <a class="active" href="index.html">Home</a>
       <a href="pages/contact.html">Contact</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://public.tableau.com/en-us/s/">Interactive Display</a>
       <a href="pages/about.html">About</a>
-    </div>
+      <a href="pages/creators.html">Creators</a>
+    </div><br>
 
     <!-- Jumbotron (headder)-->
     <div class="jumbotron text-center">
-    <h1 class="header">Internet<br>How Does It Compare</h1>
+      <h1 class="header">Internet<br>How Does It Compare</h1>
     </div>
 
-    <div class="row" id="identifer">
+    <div class="row" id="text">
+      <!-- Unknown Text, Buttons etc. -->
+      <div class="col-md-12">
+          <div class="text">
+            <p>Some Text here? Images? Do we want an interactive display here or just for Tableau?</p>
+          </div>
+      </div>
     </div>
-
   </div>
 
-  <!-- Map -->
-  <div id="mapid"></div>
+  <div id="mapid"></div><br>
   <!-- Leaflet JavaScript -->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
@@ -43,15 +53,16 @@
   <!-- Our JavaScript -->
   <script type="text/javascript" src="Static/js/map.js"></script>
 
-  <!-- Push Footer To bottom (or lower) -->
-  <div class="push"></div>
-
   <footer class="footer">
-    <p>Author: TC Rotunda<br>
-    <script language="Javascript">
-    document.write("Web Page Last Modified: " + document.lastModified +"");
-    </SCRIPT></p>
-  </footer><br>
+    <div class="author">
+      <p>Author: TC Rotunda<br>
+    </div>
+    <div class="time-stamp">
+      <script language="Javascript">
+      document.write("Web Page Last Modified: " + document.lastModified +"");
+      </SCRIPT></p>
+    </div>
+  </footer>
 
 </body>
 </html>
