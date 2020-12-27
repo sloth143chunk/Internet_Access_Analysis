@@ -3,28 +3,28 @@
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 
-CREATE TABLE "census_state" (
-    "state_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_state" (
+    "state_id" char(2)   NOT NULL,
     "state_name" varchar(50)   NOT NULL,
     CONSTRAINT "pk_census_state" PRIMARY KEY (
         "state_id"
      )
 );
 
-CREATE TABLE "census_county" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_county" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     CONSTRAINT "pk_census_county" PRIMARY KEY (
         "geo_id"
      )
 );
 
-CREATE TABLE "census_age" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_age" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "age_under_5" int   NOT NULL,
     "age_5-9" int   NOT NULL,
@@ -44,10 +44,10 @@ CREATE TABLE "census_age" (
      )
 );
 
-CREATE TABLE "census_citizenship" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_citizenship" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "citizenship_total_population" int   NOT NULL,
     "citizenship_native_born" int   NOT NULL,
@@ -57,10 +57,10 @@ CREATE TABLE "census_citizenship" (
      )
 );
 
-CREATE TABLE "census_disability" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_disability" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "disability_population_under_18" int   NOT NULL,
     "disability_population_18-64" int   NOT NULL,
@@ -73,10 +73,10 @@ CREATE TABLE "census_disability" (
      )
 );
 
-CREATE TABLE "census_education" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_education" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "%_eduction_population_25_and_over_less_than_9th_grade" decimal(3)   NOT NULL,
     "%_eduction_population_25_and_over_9th-12th_no_diploma" decimal(3)   NOT NULL,
@@ -90,10 +90,10 @@ CREATE TABLE "census_education" (
      )
 );
 
-CREATE TABLE "census_employment" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_employment" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "employment_16_and_over_in_labor_force" int   NOT NULL,
     "employment_employed" int   NOT NULL,
@@ -105,10 +105,10 @@ CREATE TABLE "census_employment" (
      )
 );
 
-CREATE TABLE "census_family_structure" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_family_structure" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "family_structure_hh_total" int   NOT NULL,
     "family_structure_hh_with_one_or_more_under_18" int   NOT NULL,
@@ -118,10 +118,10 @@ CREATE TABLE "census_family_structure" (
      )
 );
 
-CREATE TABLE "census_income" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_income" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "hh_with_income_total" int   NOT NULL,
     "hh_with_income_less_than_10000" int   NOT NULL,
@@ -141,10 +141,10 @@ CREATE TABLE "census_income" (
      )
 );
 
-CREATE TABLE "census_industry" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_industry" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "industry_agriculture_forestry_fishing_and_hunting_and_mining" int   NOT NULL,
     "industry_construction" int   NOT NULL,
@@ -164,10 +164,10 @@ CREATE TABLE "census_industry" (
      )
 );
 
-CREATE TABLE "census_internet_access" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_internet_access" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "hh_with_computer_and_internet_total" int   NOT NULL,
     "hh_with_computer" int   NOT NULL,
@@ -177,10 +177,10 @@ CREATE TABLE "census_internet_access" (
      )
 );
 
-CREATE TABLE "census_occupation" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_occupation" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "occupation_population_16_and_over_total" int   NOT NULL,
     "occupation_management_business_science_and_arts" int   NOT NULL,
@@ -193,10 +193,10 @@ CREATE TABLE "census_occupation" (
      )
 );
 
-CREATE TABLE "census_population" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" int   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_population" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "population" int   NOT NULL,
     CONSTRAINT "pk_census_population" PRIMARY KEY (
@@ -204,10 +204,10 @@ CREATE TABLE "census_population" (
      )
 );
 
-CREATE TABLE "census_race" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_race" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "race_total_population" int   NOT NULL,
     "race_hispanic_or_latino" int   NOT NULL,
@@ -226,10 +226,10 @@ CREATE TABLE "census_race" (
      )
 );
 
-CREATE TABLE "census_sex" (
-    "geo_id" string   NOT NULL,
-    "state_id" string   NOT NULL,
-    "county_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "census_sex" (
+    "geo_id" char(14)   NOT NULL,
+    "state_id" char(2)   NOT NULL,
+    "county_id" char(3)   NOT NULL,
     "county_name" varchar(50)   NOT NULL,
     "sex_total_men" int   NOT NULL,
     "sex_total_women" int   NOT NULL,
@@ -238,8 +238,8 @@ CREATE TABLE "census_sex" (
      )
 );
 
-CREATE TABLE "fcc_ml_by_county" (
-    "geo_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "fcc_ml_by_county" (
+    "geo_id" char(14)   NOT NULL,
     "dl_speed" decimal(1)   NOT NULL,
     "has_0" int   NOT NULL,
     "has_1" int   NOT NULL,
@@ -257,8 +257,8 @@ CREATE TABLE "fcc_ml_by_county" (
      )
 );
 
-CREATE TABLE "fcc_ml_summary_final" (
-    "geo_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "fcc_ml_summary_final" (
+    "geo_id" char(14)   NOT NULL,
     "dl_speed_100_ua" decimal(1)   NOT NULL,
     "dl_speed_level_up" decimal(1)   NOT NULL,
     "level_up_access_pop_percent" decimal(20)   NOT NULL,
@@ -267,8 +267,8 @@ CREATE TABLE "fcc_ml_summary_final" (
      )
 );
 
-CREATE TABLE "urban_rural_by_county" (
-    "geo_id" string   NOT NULL,
+CREATE TABLE IF NOT EXISTS "urban_rural_by_county" (
+    "geo_id" char(14)   NOT NULL,
     "urban_rural" varchar(5)   NOT NULL,
     "total_pop" int   NOT NULL,
     CONSTRAINT "pk_urban_rural_by_county" PRIMARY KEY (
