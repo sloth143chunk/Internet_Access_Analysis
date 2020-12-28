@@ -33,6 +33,18 @@ L.control.layers(baseMaps).addTo(map);
 let usCounties = "https://raw.githubusercontent.com/jgoodall/us-maps/master/geojson/county.geo.json"
 let usStates = "https://raw.githubusercontent.com/jgoodall/us-maps/master/geojson/state.geo.json"
 
+// var combinedData = 
+// function concatGeoJSON(usCounties, usStates){
+//     return { 
+//         "type" : "FeatureCollection",
+//         "features": [... usCounties.features, ... usStates.features]
+//     }
+// };
+
+// console.log(combinedData)
+
+
+
 // Create a style for county lines.
 let countyStyle = {
     color: '#003366',
