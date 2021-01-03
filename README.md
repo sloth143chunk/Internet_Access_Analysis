@@ -28,23 +28,7 @@ The model will be a dashboard that individuals can interact with to increase int
   - Database storage SQL: PgAdmin
   - Dashboard: Flask, JavaScript, HTML, Tableau?
 ## Workflow
-### Communication Protocols
-- Meetings
-  - Weekly large group and small group meetings; large group meets on zoom on Wednesdays and Sundays; small groups meet 1-2 times a week at the convenience of group members.
-  -  Group breakdown:
-     -  Machine Learning Team = Tabitha, David, Tara
-     -  Database Team = TC, Andrew
-  - Communicate with whole group and small groups through Slack Channels and DMs
-  - [Google Shared Folder](https://drive.google.com/drive/folders/1iTgYdopYC7-NkrwVKEIwUNZN5K2RShPh?usp=sharing) available to all members with notes from meetings and documentation of process
-- GitHub Protocols
-  - Members working on the same files need to communicate any commits with the other parties.
-  - Team members within the Machine Learning Team and the Database team communicate when they are pulling to main.
-  - A pull request must be approved by at least one member of the overall team.
-  - After a pull request is approved, the person who made the request can merge it with the main branch.
-  - Group members will create new branches in the format name/new_project_piece_name every time he or she is beginning a new/unique part of project.
-  - Group members must ensure that they are working from the latest update to the main branch with protocols outlined in the `github_protocols.txt` file within the `GitHub` folder.
-
-- Process documentation
+### Process documentation
 
 
   ![process documentation plan](Static/Images/Final_Project_Process.png)
