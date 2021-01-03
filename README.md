@@ -10,7 +10,7 @@ However, analyses from the Pew Research Center and other studies indicate that a
 This analysis determines the factors that play a role in internet connectivity within a community using machine learning.
 The project's goal is to use the analysis to inform a model that can help communities determine the best approaches to bringing more people online.
 The model will be a dashboard that individuals can interact with to increase internet coverage by targeting the factors identified with the analysis.
-
+Utilize this [link](https://docs.google.com/presentation/d/1gCSftL6c0bIMByRA-rVEHvnzC5L0ShjduuX5g1dd13U/edit#slide=id.gaa2f89fcd0_0_82) to view the Google Slides presentation.
 
 ## Resources
 - Data Source:
