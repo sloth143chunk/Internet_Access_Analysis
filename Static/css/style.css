@@ -1,0 +1,134 @@
+html, body
+{
+  background-color: #003366;
+  height: 100%;
+  /*width: 0%;*/
+  padding-top: .5%;
+  /*padding-bottom: 50px;*/
+  margin: 0;
+  padding-bottom: .5%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #C0C0C0;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #003366;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #FFFFFF;
+  color: #003366;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #808080;
+  color: #003366;
+}
+
+.container-fluid {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
+.jumbotron{
+  background-color: #003366;
+  color: #FFFFFF;
+  background: url("../Images/internet_jumbotron.jpg") no-repeat center center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 50% 100%;
+  background-size: 75% 150%;
+  min-height: 300px;
+}
+
+#text{
+  color: #FFFFFF;
+}
+
+/* Map Styling */
+
+#mapid {
+  width: 50%;
+  height: 75%;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+/* h4 Styling Map Popups */
+.map-popup-header {
+  text-align:center;
+  color: #003366;
+}
+.map-popup-contents{
+  text-align:left;
+  color: #003366;
+}
+
+/* Contact Styling  */
+.contact {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* About Styling  */
+.about {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Creators Styling  */
+.andrew{
+  text-align: center;
+  color: #FFFFFF;
+}
+.tabitha{
+  text-align: center;
+  color: #FFFFFF;
+}
+.tc{
+  text-align: center;
+  color: #FFFFFF;
+}.david{
+  text-align: center;
+  color: #FFFFFF;
+}
+.tara{
+  text-align: center;
+  color: #FFFFFF;
+}
+.name{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Footer Styling */
+footer.footer{
+  text-align: center;
+  vertical-align: middle;
+  background-color: #C0C0C0;
+  color: #003366;
+  position: relative;
+}
