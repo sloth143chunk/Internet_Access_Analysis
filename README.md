@@ -27,8 +27,8 @@ To learn more, please visit this [Google Slides Presentation](https://docs.googl
   - `adaboost_models_practice.ipynb` contains the machine learning code for the adaboost model.
   - The ETL code for pulling the U.S. Census data with an API key for the state of California and placing it into a dataframe is in the `census_api.ipynb` file.
   - Code used to cleanup and organize the FCC data is within `fcc_data_cleanup.ipynb`
-  - `merged_internet_access_df.ipynb` has the code used to combine all the various census csv files for processing with machine learning.
-  - `rf_bf_models_practice.ipynb` contains the random and forest balanced models and feature importance code.
+  - `scaled_merged_internet_access_df.ipynb` has the code used to combine all the various census csv files for processing with machine learning.
+  - `multiple_linear_regression.ipynb` contains the multiple linear regression model and feature importance code.
   - Code to cleanup the USDA data is within the `usda_data_cleanup.ipynb`.
   - Code for visualizing and looking over the data with box and whisker plots and other graphs is in `visualizations.ipynb`.
   
@@ -42,12 +42,12 @@ To learn more, please visit this [Google Slides Presentation](https://docs.googl
   
   ![process documentation plan](Static/Images/Final_Project_Process.png)
 ### Database Creation
-- Will describe the database creation and data storage plan here (once it is more finalized).
-- Using AWS to store data, will talk with TC to complete a write up and include an image of the primary and foreign key links...
+- Will describe the database creation and data storage plan here in-depth (once it is more finalized).
+- We are using AWS to store data, will talk with TC to complete a write up and include an image of the primary and foreign key links..
 
 ### Machine Learning Model
 - Preprocess and encode data, train the model, classification/ensemble model
-- Still need to update the machine learning model descriptions
+- Still need to update the machine learning model descriptions and give insight into which ones we are selecting, but we are still in the process of developing some of our models.
 ## Output
 - Sample of what the dashboard will look like.
   Users will be shown a map of the state which they can then use to click into a specific county and view the internet coverage score of that particular county along with bars of factors that they can adjust to see if the coverage score will increase.
