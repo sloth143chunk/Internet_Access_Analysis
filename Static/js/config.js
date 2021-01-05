@@ -1,2 +1,3 @@
 // Public MapBox Key
 const API_KEY = 'pk.eyJ1IjoidGNyb3R1bmRhIiwiYSI6ImNrZnl3N2YzZTBnZWwycW9kZDBka3Y0NDQifQ.ThAXAx5xGdYCO4CgnWv9KQ';
+const API_KEY_CUSTOM = 'pk.eyJ1IjoidWNiLWF0dHJpYnV0ZS1lcnJvciIsImEiOiJja2o1YXByZWk1djAzMnNwZGl0a3R5YXF1In0.gUUkrVAVr-I8I-mIwwazZw'

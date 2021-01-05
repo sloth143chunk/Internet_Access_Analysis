@@ -20,18 +20,25 @@ let map = L.map('mapid', {
     layers: [light]
 });
 
+var us = L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11')
+
+
 // Create a base layer that holds all three maps.
 let baseMaps = {
     "Light Map": light,
     "Outdoor Map": outdoors,
+    "US": usFocused
 };
 
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
 
+// const usBoundaries = require('./state_county_boundaries.json');
+// console.log(usBoundaries);
+
 //https://github.com/jgoodall/us-maps
-let usCounties = "https://raw.githubusercontent.com/jgoodall/us-maps/master/geojson/county.geo.json"
-let usStates = "https://raw.githubusercontent.com/jgoodall/us-maps/master/geojson/state.geo.json"
+//let usCounties = "https://raw.githubusercontent.com/jgoodall/us-maps/master/geojson/county.geo.json"
+//let usStates = "https://raw.githubusercontent.com/jgoodall/us-maps/master/geojson/state.geo.json"
 
 // var combinedData = 
 // function concatGeoJSON(usCounties, usStates){
@@ -46,43 +53,43 @@ let usStates = "https://raw.githubusercontent.com/jgoodall/us-maps/master/geojso
 
 
 // Create a style for county lines.
-let countyStyle = {
-    color: '#003366',
-    fillColor: '#ffff00',
-    weight: .5,
-}
+// let countyStyle = {
+//     color: '#003366',
+//     fillColor: '#ffff00',
+//     weight: .5,
+// }
 
 // Create a style for state lines.
-let stateStyle = {
-    color: '#5f0087',
-    //fillColor: '#ffff00',
-    weight: 1,
-}
+// let stateStyle = {
+//     color: '#5f0087',
+//     //fillColor: '#ffff00',
+//     weight: 1,
+// }
 
 // Grabbing States
-d3.json(usStates).then(function(data) {
-    // printing
-    console.log(data);
+// d3.json(usStates).then(function(data) {
+//     // printing
+//     console.log(data);
 
-    // adding styling
-    L.geoJson(data,{
-        style:stateStyle
-    })
-    .addTo(map);
-});
+//     // adding styling
+//     L.geoJson(data,{
+//         style:stateStyle
+//     })
+//     .addTo(map);
+// });
 
 // Grabbing Counties
-d3.json(usCounties).then(function(data) {
-    // printing
-    console.log(data);
+// d3.json(usCounties).then(function(data) {
+//     // printing
+//     console.log(data);
 
-    // adding styling
-    L.geoJson(data,{
-        style:countyStyle,
-        onEachFeature: function onEachFeature(feature, layer) {
-            layer.bindPopup("<div class='map-popup-header'><h4>"+feature.properties.NAMELSAD10+", "+feature.properties.STUSPS10+"</h4></div>"+
-            "<div class='map-popup-contents'><p>"+"GEO ID: "+feature.properties.GEOID10+"<br>"+
-            "Internet Score: "+"</p></div>")
-    }})
-    .addTo(map);
-});
+//     // adding styling
+//     L.geoJson(data,{
+//         style:countyStyle,
+//         onEachFeature: function onEachFeature(feature, layer) {
+//             layer.bindPopup("<div class='map-popup-header'><h4>"+feature.properties.NAMELSAD10+", "+feature.properties.STUSPS10+"</h4></div>"+
+//             "<div class='map-popup-contents'><p>"+"GEO ID: "+feature.properties.GEOID10+"<br>"+
+//             "Internet Score: "+"</p></div>")
+//     }})
+//     .addTo(map);
+// });
