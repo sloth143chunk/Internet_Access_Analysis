@@ -1,4 +1,4 @@
-geo_id,state_id,county_id,county_name,employment_16_and_over_in_labor_force,employment_employed,employment_unemployed,employment_not_in_labor_force,employment_%_unemployment_rate
+geo_id,state_id,county_id,county_name,employment_16_and_over_in_labor_force,employment_employed,employment_unemployed,employment_not_in_labor_force,employment_unemployment_rate
 0500000US06033,06,033,Lake County,26145,23589,2556,26171,9.8
 0500000US06043,06,043,Mariposa County,7727,7051,676,7284,8.7
 0500000US06115,06,115,Yuba County,31602,28954,2648,23343,8.4
