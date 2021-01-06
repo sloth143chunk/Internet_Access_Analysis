@@ -1,4 +1,4 @@
-geo_id,state_id,county_id,county_name,%_eduction_population_25_and_over_less_than_9th_grade,%_eduction_population_25_and_over_9th-12th_no_diploma,%_eduction_population_25_and_over_high_school_graduate,%_eduction_population_25_and_over_some_college_no_degree,%_eduction_population_25_and_over_associates_degree,%_eduction_population_25_and_over_bachelors_degree,%_eduction_population_25_and_over_graduate_or_professional_degree
+geo_id,state_id,county_id,county_name,edu_pop_over_25_less_than_9th_grade,edu_pop_over_25_9th-12th_no_diploma,edu_pop_over_25_high_school_graduate,edu_pop_over_25_some_college_no_degree,edu_pop_over_25_associates_degree,edu_pop_over_25_bachelors_degree,edu_pop_over_25_graduate_or_professional_degree
 0500000US06033,06,033,Lake County,5.6,9.2,30.1,27.8,11.5,10.3,5.5
 0500000US06043,06,043,Mariposa County,3.2,6.4,26.5,30.6,9.8,14.6,8.8
 0500000US06115,06,115,Yuba County,7.6,10.3,23.1,31.2,11.0,11.7,4.9
