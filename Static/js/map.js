@@ -1,7 +1,7 @@
 // Add console.log to check to see if our code is working.
 console.log("working");
 
-// We create the tile layer that will be the background of our map.
+// Get maps
 let light = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
 	maxZoom: 18,
@@ -20,74 +20,58 @@ let map = L.map('mapid', {
     layers: [light]
 });
 
-//var us = L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11')
-
-
 // Create a base layer that holds all three maps.
 let baseMaps = {
     "Light Map": light,
     "Outdoor Map": outdoors,
-    //"US": usFocused
 };
 
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
 
-// const usBoundaries = require('./state_county_boundaries.json');
-// console.log(usBoundaries);
+// GeoJSON
+let usStateCounty = "https://raw.githubusercontent.com/sloth143chunk/Internet_Access_Analysis/tc/viz/Static/js/state_county_boundaries.json"
 
-//https://github.com/jgoodall/us-maps
-//let usCounties = "https://raw.githubusercontent.com/jgoodall/us-maps/master/geojson/county.geo.json"
-//let usStates = "https://raw.githubusercontent.com/jgoodall/us-maps/master/geojson/state.geo.json"
+//Create a style for county lines.
+let usStateCountyStyle = {
+    color: '#003366',
+    fillColor: '#ffff00',
+    weight: .5,
+}
 
-// var combinedData = 
-// function concatGeoJSON(usCounties, usStates){
-//     return { 
-//         "type" : "FeatureCollection",
-//         "features": [... usCounties.features, ... usStates.features]
-//     }
-// };
+// Grabbing Coords
+d3.json(usStateCounty).then(function(data) {
+    // printing
+    console.log(data);
+    console.log(data.features);
+    // Creating a GeoJSON layer with the retrieved data.
+    console.log(data.features.map(el => ({
+        "stateName": el.properties.type
+    })));
+    console.log(data.features.map(el => ({
+        "type": el.properties.state_name
+    })));
+    console.log(data.features.map(el => ({
+        "countyName": el.properties.county_name
+    })));
 
-// console.log(combinedData)
-
-// Create a style for county lines.
-// let countyStyle = {
-//     color: '#003366',
-//     fillColor: '#ffff00',
-//     weight: .5,
-// }
-
-// Create a style for state lines.
-// let stateStyle = {
-//     color: '#5f0087',
-//     //fillColor: '#ffff00',
-//     weight: 1,
-// }
-
-// Grabbing States
-// d3.json(usStates).then(function(data) {
-//     // printing
-//     console.log(data);
-
-//     // adding styling
-//     L.geoJson(data,{
-//         style:stateStyle
-//     })
-//     .addTo(map);
-// });
-
-// Grabbing Counties
-// d3.json(usCounties).then(function(data) {
-//     // printing
-//     console.log(data);
-
-//     // adding styling
-//     L.geoJson(data,{
-//         style:countyStyle,
-//         onEachFeature: function onEachFeature(feature, layer) {
-//             layer.bindPopup("<div class='map-popup-header'><h4>"+feature.properties.NAMELSAD10+", "+feature.properties.STUSPS10+"</h4></div>"+
-//             "<div class='map-popup-contents'><p>"+"GEO ID: "+feature.properties.GEOID10+"<br>"+
-//             "Internet Score: "+"</p></div>")
-//     }})
-//     .addTo(map);
-// });
+    // adding style and layers to popup
+    L.geoJson(data,{
+        style:usStateCountyStyle,
+        onEachFeature: function onEachFeature(feature, layer) {
+            if (feature.properties.type == 'county'){
+                layer.bindPopup("<div class='map-popup-header'><h4>"+feature.properties.county_name+", "+feature.properties.stateName+"</h4></div>"+
+                "<div class='map-popup-contents'><p>"+"GEO ID: "+feature.properties.geo_id+"<br>"+
+                "Internet Score: "+"</p></div>")
+            }
+    }})
+    .addTo(map);
+    // L.geoJson(data,{
+    //     style:usStateCountyStyle,
+    //     onEachFeature: function onEachFeature(feature, layer) {
+    //         layer.bindPopup("<div class='map-popup-header'><h4>"+feature.properties.county_name+", "+feature.properties.stateName+"</h4></div>"+
+    //         "<div class='map-popup-contents'><p>"+"GEO ID: "+feature.properties.geo_id+"<br>"+
+    //         "Internet Score: "+"</p></div>")
+    // }})
+    // .addTo(map);
+});
