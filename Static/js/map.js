@@ -55,7 +55,7 @@ let usStateCountyStyle = {
 }
 
 // Grabbing Coords
-d3.json('/Internet_Access_Analysis/Static/js/counties.json').then(function(data) {
+d3.json(usStateCounty).then(function(data) {
     // printing
     console.log(data);
     console.log(data.features);
