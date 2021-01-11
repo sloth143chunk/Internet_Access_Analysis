@@ -63,21 +63,21 @@ To learn more, please visit this [Google Slides Presentation](https://docs.googl
 - We chose Multiple Linear Regression and Random Forest Decision Trees because these models offer the ability to visualize multiple predictor variables for feature importance and run efficiently on vast data sets.
 - Multiple linear regression results:
   - CA
-  ![CA ML Regression Summary](Static/Images/ca_ml_regression_summary.png)
-  ![CA ML Top 5 feature importance](Static/Images/ca_ml_regression_top5_feature_importance.png)
+  ![CA ML Regression Summary](Static/Images/ca_ml_regression_summary.PNG)
+  ![CA ML Top 5 feature importance](Static/Images/ca_ml_regression_top5_feature_importance.PNG)
 
   - USA
-  ![USA ML Regression Summary](Static/Images/usa_ml_regression_summary.png)
-  ![USA ML Top 5 feature importance](Static/Images/usa_ml_regression_top5_feature_importance.png)
+  ![USA ML Regression Summary](Static/Images/usa_ml_regression_summary.PNG)
+  ![USA ML Top 5 feature importance](Static/Images/usa_ml_regression_top5_feature_importance.PNG)
 
 - Random forest decision tree:
   - CA
-  ![CA RF Confusion Matrix](Static/Images/ca_confusion_matrix.png)
-  ![CA RF Top 5 feature importance](Static/Images/ca_random_forest_top5_feature_importance.png)
+  ![CA RF Confusion Matrix](Static/Images/ca_confusion_matrix.PNG)
+  ![CA RF Top 5 feature importance](Static/Images/ca_random_forest_top5_feature_importance.PNG)
 
   - USA
-  ![USA RF Confusion Matrix](Static/Images/usa_confusion_matrix.png)
-  ![USA RF Top 5 feature importance](Static/Images/usa_random_forest_top5_feature_importance.png)
+  ![USA RF Confusion Matrix](Static/Images/usa_confusion_matrix.PNG)
+  ![USA RF Top 5 feature importance](Static/Images/usa_random_forest_top5_feature_importance.PNG)
 
 - The models returned that there were strong multicollinearity problems with the dataset and more time needs to be spent on cleaning it up.  The ca regression model had a 6% mean squared error and the usa regression model returned 3%.  The random forest model returned a 93% accuracy score and 100% percision score for internet access above 70% on the ca dataset and a 78% accuracy score with a 84% percision score for internet access above 70%.
 ## Output
