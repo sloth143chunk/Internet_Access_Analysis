@@ -61,11 +61,25 @@ To learn more, please visit this [Google Slides Presentation](https://docs.googl
 ### Machine Learning Model
 - We looked at a few different model types such as Easy Ensemble AdaBoost, Oversampling and Undersampling. However, the model that fit our project the best was Multiple Linear Regression and Random Forest Decision Trees.
 - We chose Multiple Linear Regression and Random Forest Decision Trees because these models offer the ability to visualize multiple predictor variables for feature importance and run efficiently on vast data sets.
-- The results of the multiple linear regression model on California data indicate a variance of 6 percent from predicted and actual target data and the top four most important features as: occupation-sales and office, income less than 10,000 and 35,000 to 50,000, and age 55-59.
-- Random Forest Model showed a 2 percent variance between actual and predicted target data and indicated that the top four most important features were: race, some other race, public administration, income 10,000 to 15,000 and retail/trade.
-- Though we only ran our initial analysis on California, we are preparing to run the analysis on all counties within the U.S. and there is a notebook with the machine learning code to run that (see the notebook folder for more detail).
-- Note: running the multiple linear regression model using Pandas might not have been the most effective way to run that analysis. We would recommend trying the analysis in R Studio.
-- Because our data has floats and larger integers, we were unable to get our confusion matrix finalized, but we are working on debugging this.
+- Multiple linear regression results:
+  - CA
+  ![CA ML Regression Summary](Static/Images/ca_ml_regression_summary.PNG)
+  ![CA ML Top 5 feature importance](Static/Images/ca_ml_regression_top5_feature_importance.PNG)
+
+  - USA
+  ![USA ML Regression Summary](Static/Images/usa_ml_regression_summary.PNG)
+  ![USA ML Top 5 feature importance](Static/Images/usa_ml_regression_top5_feature_importance.PNG)
+
+- Random forest decision tree:
+  - CA
+  ![CA RF Confusion Matrix](Static/Images/ca_confusion_matrix.PNG)
+  ![CA RF Top 5 feature importance](Static/Images/ca_random_forest_top5_feature_importance.PNG)
+
+  - USA
+  ![USA RF Confusion Matrix](Static/Images/usa_confusion_matrix.PNG)
+  ![USA RF Top 5 feature importance](Static/Images/usa_random_forest_top5_feature_importance.PNG)
+
+- The models returned that there were strong multicollinearity problems with the dataset and more time needs to be spent on cleaning it up.  The ca regression model had a 6% mean squared error and the usa regression model returned 3%.  The random forest model returned a 93% accuracy score and 100% percision score for internet access above 70% on the ca dataset and a 78% accuracy score with a 84% percision score for internet access above 70%.
 ## Output
 - Click here for the [Tableau Dashboard](https://public.tableau.com/profile/tc1059#!/vizhome/InternetMockUp/Dashboard1?publish=yes) and for a mockup of our website follow [this link](https://sloth143chunk.github.io/Internet_Access_Analysis/).
 - The goal of this project will be to have users view a map of the all counties within the U.S. which they can then use to click into a specific county and view the internet coverage score of that particular county along with bars of factors that they can adjust to see if the coverage score will increase.
