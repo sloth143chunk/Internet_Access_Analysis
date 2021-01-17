@@ -30,40 +30,28 @@ let baseMaps = {
 L.control.layers(baseMaps).addTo(map);
 
 // GeoJSON
-// let usStateCounty = "https://s3-us-west-1.amazonaws.com/attribute.error.geojson/counties.json"
+ let usStateCounty = "https://s3-us-west-1.amazonaws.com/attribute.error.geojson/boundaries.json"
 
 //Create a style for county lines.
 let usStateCountyStyle = {
     color: '#003366',
-    fillColor: '#ffff00',
+    //fillColor: getColor(feature.properties.internet_score),
     weight: .5,
 }
 
+function getColor(internet_score) {
+    if (internet_score > 7) {
+      return "#006600";
+    }
+    if (internet_score > 3) {
+      return "#FF8000";
+    }
+    return "#FF0000";
+}
+
 // Grabbing Coords
-// d3
-// .json(usStateCounty, {headers:{'Allow-Control-Allow-Origin': '*'}})
-// .then(function(data) {
-//     // printing
-//     console.log(data);
-//     console.log(data.features);
-//     // Creating a GeoJSON layer with the retrieved data.
-//     console.log(data.features.map(el => ({
-//         "countyName": el.properties.county_name
-//     })));
-
-//     // adding style and layers to popup
-//     L.geoJson(data,{
-//         style:usStateCountyStyle,
-//         onEachFeature: function onEachFeature(feature, layer) {
-//                 layer.bindPopup("<div class='map-popup-header'><h4>"+feature.properties.county_name+", "+feature.properties.stateName+"</h4></div>"+
-//                 "<div class='map-popup-contents'><p>"+"GEO ID: "+feature.properties.geo_id+"<br>"+
-//                 "Internet Score: "+"</p></div>")
-//     }})
-//     .addTo(map);
-// });
-
 d3
-.json(fetch('/Internet_Access_Analysis/Static/js/counties.json'))
+.json(usStateCounty, {headers:{'Allow-Control-Allow-Origin': '*'}})
 .then(function(data) {
     // printing
     console.log(data);
@@ -77,9 +65,9 @@ d3
     L.geoJson(data,{
         style:usStateCountyStyle,
         onEachFeature: function onEachFeature(feature, layer) {
-                layer.bindPopup("<div class='map-popup-header'><h4>"+feature.properties.county_name+", "+feature.properties.stateName+"</h4></div>"+
+                layer.bindPopup("<div class='map-popup-header'><h4>"+feature.properties.county_name+", "+feature.properties.state_name+"</h4></div>"+
                 "<div class='map-popup-contents'><p>"+"GEO ID: "+feature.properties.geo_id+"<br>"+
-                "Internet Score: "+"</p></div>")
+                "Internet Score: "+feature.properties.internet_score+"</p></div>")
     }})
     .addTo(map);
 });
