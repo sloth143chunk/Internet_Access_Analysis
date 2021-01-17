@@ -14,7 +14,7 @@ let outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v11
     accessToken: API_KEY
 });
 
-let map = L.map('mapid', {
+let map = L.map('map', {
 	center: [40.7, -94.5],
 	zoom: 3,
     layers: [light]
@@ -30,22 +30,7 @@ let baseMaps = {
 L.control.layers(baseMaps).addTo(map);
 
 // GeoJSON
-let usStateCounty = "https://raw.githubusercontent.com/sloth143chunk/Internet_Access_Analysis/main/Static/js/counties.json"
-
-// fetch('/Internet_Access_Analysis/Static/js/counties.json')
-// .then(response => {
-//     console.log(response);
-//     return response.json(); 
-// })
-// .then(data => {
-//     console.log(data.features.map(el => ({
-//         "countyName": el.properties.county_name
-//     })));
-//     console.log(data);
-// })
-// .catch(error => {
-//     console.log("oops: ", error);
-// })
+// let usStateCounty = "https://s3-us-west-1.amazonaws.com/attribute.error.geojson/counties.json"
 
 //Create a style for county lines.
 let usStateCountyStyle = {
@@ -55,7 +40,31 @@ let usStateCountyStyle = {
 }
 
 // Grabbing Coords
-d3.json(usStateCounty).then(function(data) {
+// d3
+// .json(usStateCounty, {headers:{'Allow-Control-Allow-Origin': '*'}})
+// .then(function(data) {
+//     // printing
+//     console.log(data);
+//     console.log(data.features);
+//     // Creating a GeoJSON layer with the retrieved data.
+//     console.log(data.features.map(el => ({
+//         "countyName": el.properties.county_name
+//     })));
+
+//     // adding style and layers to popup
+//     L.geoJson(data,{
+//         style:usStateCountyStyle,
+//         onEachFeature: function onEachFeature(feature, layer) {
+//                 layer.bindPopup("<div class='map-popup-header'><h4>"+feature.properties.county_name+", "+feature.properties.stateName+"</h4></div>"+
+//                 "<div class='map-popup-contents'><p>"+"GEO ID: "+feature.properties.geo_id+"<br>"+
+//                 "Internet Score: "+"</p></div>")
+//     }})
+//     .addTo(map);
+// });
+
+d3
+.json(fetch('/Internet_Access_Analysis/Static/js/counties.json'))
+.then(function(data) {
     // printing
     console.log(data);
     console.log(data.features);

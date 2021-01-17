@@ -55,6 +55,11 @@ html, body
   background-size: 75% 150%;
   min-height: 300px;
 }
+/* mark {
+  background-color: #99CCFF;
+  color: #FFFFFF;
+  opacity: 0.5;
+} */
 
 #text{
   color: #FFFFFF;
@@ -62,6 +67,15 @@ html, body
 
 /* Map Styling */
 
+#map {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 400px;
+  width: 100%;
+  /* visibility: visible; */
+}
+/* 
 #mapid {
   width: 50%;
   height: 75%;
@@ -69,7 +83,8 @@ html, body
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-}
+} */
+
 .legend i {
   width: 18px;
   height: 18px;

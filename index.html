@@ -30,21 +30,37 @@
 
     <!-- Jumbotron (headder)-->
     <div class="jumbotron text-center">
-      <h1 class="header">Internet<br>How Does It Compare</h1>
+      <h1 class="header">Internet</h1><br>
+      <h1 class="header-two">How Does It Compare?</h1>
     </div>
 
     <div class="row" id="text">
-      <!-- Unknown Text, Buttons etc. -->
       <div class="col-md-12">
           <div class="text">
             <p>Some Text here? Images? Do we want an interactive display here or just for Tableau?</p>
           </div>
       </div>
     </div>
+    <div class="col-md-12">
+      <div id="map"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="col-md-12">
+      <footer class="footer">
+        <div class="author">
+          <p>Author: TC Rotunda<br>
+        </div>
+        <div class="time-stamp">
+          <script language="Javascript">
+          document.write("Web Page Last Modified: " + document.lastModified +"");
+          </SCRIPT></p>
+        </div>
+      </footer>
+    </div>
   </div>
 
-  <div id="mapid"></div><br>
-  <!-- Leaflet JavaScript -->
+  <!-- <div id="map"></div> -->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
   crossorigin=""></script>
@@ -52,17 +68,6 @@
   <script type="text/javascript" src="Static/js/config.js"></script>
   <!-- Our JavaScript -->
   <script type="text/javascript" src="Static/js/map.js"></script>
-
-  <footer class="footer">
-    <div class="author">
-      <p>Author: TC Rotunda<br>
-    </div>
-    <div class="time-stamp">
-      <script language="Javascript">
-      document.write("Web Page Last Modified: " + document.lastModified +"");
-      </SCRIPT></p>
-    </div>
-  </footer>
 
 </body>
 </html>
