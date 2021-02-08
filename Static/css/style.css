@@ -39,7 +39,7 @@ html, body
 
 .container-fluid {
   min-height: 100%;
-
+  position:relative;
   /* Equal to height of footer */
   /* But also accounting for potential margin-bottom of last child */
   margin-bottom: -50px;
@@ -55,6 +55,10 @@ html, body
   background-size: 75% 150%;
   min-height: 300px;
 }
+mark {
+  background-color: #99CCFF;
+  color: #FFFFFF;
+}
 
 #text{
   color: #FFFFFF;
@@ -62,14 +66,16 @@ html, body
 
 /* Map Styling */
 
-#mapid {
-  width: 50%;
-  height: 75%;
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+#map {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 400px;
+  width: 100%;
+  /* visibility: visible; */
 }
+/* 
+
 .legend i {
   width: 18px;
   height: 18px;
@@ -77,6 +83,7 @@ html, body
   margin-right: 8px;
   opacity: 0.7;
 }
+
 /* h4 Styling Map Popups */
 .map-popup-header {
   text-align:center;
@@ -94,7 +101,7 @@ html, body
 }
 
 /* About Styling  */
-.about {
+.purpose, .analysis, .learn_more {
   text-align: center;
   color: #FFFFFF;
 }
